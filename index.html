@@ -1514,7 +1514,7 @@ JVM虚拟机（加载机制/内存以及垃圾回收）
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,506
+                  3,632
                 </span>
               
 
@@ -1530,7 +1530,7 @@ JVM虚拟机（加载机制/内存以及垃圾回收）
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  10
+                  13
                 </span>
               
             </div>
@@ -1555,17 +1555,11 @@ JVM虚拟机（加载机制/内存以及垃圾回收）
           
           
 协程
-挂起函数
-async/await/yield
-
-
-类型别名 typealias
-与对象实例绑定的可调用的引用 
-操作符:: 用来得到一个成员的引用，指向一个具体的对象实例的方法或者属性
-
-
-封闭类（sealed class）与数据类（data class）
-Kotlin1.1中删除了1.0中
+对于耗时操作（网络io，文件io，cpu或gpu密集的操作），并且要求调用者等待，直到任务完成。协程提供了一种新的方式，可以避免线程阻塞，改为更加廉价可控的操作：协程
+其他：
+JS的async/await 
+Go的channels，select
+C#和python的generators和yi
           ...
           <!--noindex-->
           <div class="post-button text-center">

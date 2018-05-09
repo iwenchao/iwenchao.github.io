@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="协程 挂起函数 async/await/yield   类型别名 typealias 与对象实例绑定的可调用的引用  操作符:: 用来得到一个成员的引用，指向一个具体的对象实例的方法或者属性   封闭类（sealed class）与数据类（data class） Kotlin1.1中删除了1.0中对封闭类与数据类的一些限制。过去封闭类的子类只能声明在内部，现在可以声明在同一个module内任何一">
+<meta name="description" content="协程 对于耗时操作（网络io，文件io，cpu或gpu密集的操作），并且要求调用者等待，直到任务完成。协程提供了一种新的方式，可以避免线程阻塞，改为更加廉价可控的操作：协程 其他： JS的async/await  Go的channels，select C#和python的generators和yield   阻塞（Blocking）与挂起（Suspend） 简单的讲：协程就是一段计算过程；可以被">
 <meta name="keywords" content="kotlin">
 <meta property="og:type" content="article">
 <meta property="og:title" content="kotlin基本概念学习">
 <meta property="og:url" content="http://wenchaos.com/kotlin基本概念/index.html">
 <meta property="og:site_name" content="大王派我来巡山">
-<meta property="og:description" content="协程 挂起函数 async/await/yield   类型别名 typealias 与对象实例绑定的可调用的引用  操作符:: 用来得到一个成员的引用，指向一个具体的对象实例的方法或者属性   封闭类（sealed class）与数据类（data class） Kotlin1.1中删除了1.0中对封闭类与数据类的一些限制。过去封闭类的子类只能声明在内部，现在可以声明在同一个module内任何一">
+<meta property="og:description" content="协程 对于耗时操作（网络io，文件io，cpu或gpu密集的操作），并且要求调用者等待，直到任务完成。协程提供了一种新的方式，可以避免线程阻塞，改为更加廉价可控的操作：协程 其他： JS的async/await  Go的channels，select C#和python的generators和yield   阻塞（Blocking）与挂起（Suspend） 简单的讲：协程就是一段计算过程；可以被">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-09T06:14:47.000Z">
+<meta property="og:updated_time" content="2018-05-09T08:35:14.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="kotlin基本概念学习">
-<meta name="twitter:description" content="协程 挂起函数 async/await/yield   类型别名 typealias 与对象实例绑定的可调用的引用  操作符:: 用来得到一个成员的引用，指向一个具体的对象实例的方法或者属性   封闭类（sealed class）与数据类（data class） Kotlin1.1中删除了1.0中对封闭类与数据类的一些限制。过去封闭类的子类只能声明在内部，现在可以声明在同一个module内任何一">
+<meta name="twitter:description" content="协程 对于耗时操作（网络io，文件io，cpu或gpu密集的操作），并且要求调用者等待，直到任务完成。协程提供了一种新的方式，可以避免线程阻塞，改为更加廉价可控的操作：协程 其他： JS的async/await  Go的channels，select C#和python的generators和yield   阻塞（Blocking）与挂起（Suspend） 简单的讲：协程就是一段计算过程；可以被">
 
 
 
@@ -360,7 +360,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,506
+                  3,632
                 </span>
               
 
@@ -376,7 +376,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  10
+                  13
                 </span>
               
             </div>
@@ -399,8 +399,26 @@
       
         <ol>
 <li>协程<ol>
-<li>挂起函数</li>
-<li>async/await/yield</li>
+<li>对于耗时操作（网络io，文件io，cpu或gpu密集的操作），并且要求调用者等待，直到任务完成。协程提供了一种新的方式，可以避免线程阻塞，改为更加廉价可控的操作：协程</li>
+<li>其他：<ol>
+<li>JS的async/await </li>
+<li>Go的channels，select</li>
+<li>C#和python的generators和yield</li>
+</ol>
+</li>
+<li>阻塞（Blocking）与挂起（Suspend）</li>
+<li>简单的讲：协程就是一段计算过程；可以被挂起，但是不会阻塞线程（进程，线程的切换以及阻塞代价是昂贵的）；协程不会在某个随机的代码中挂起，只能在挂起点的地方挂起，即suspend挂起函数</li>
+<li>挂起函数<ol>
+<li>规则和普通函数一样；但是调用者只能是挂起函数，或者是协程，或者是协程或挂起函数中内联的函数字面值</li>
+<li>挂起函数还可以是虚函数，即在接口中定义</li>
+</ol>
+</li>
+<li>协程的内部工作机制 <ol>
+<li>协程完全通过编译技术实现，（不需要VM或OS的特殊支持），挂起则是通过代码转换来实现。基本上，每个挂起函数，在编译期间都被转换为一个状态机，状态机中的各个状态对应于挂起调用。在挂起之前，状态机的下一个状态，以及相关的局部变量等信息，都会被保存到编译器生成的类的成员域变量中。协程恢复执行时，局部变量会被恢复出来，状态机会在挂起之后的状态继续执行。</li>
+<li>协程挂起之后可以作为对象来保存和传递。，对象内部保存了协程的挂起后的状态，以及相关的局部变量等信息。这种对象的类型是Continuation，我们这里描述的整个代码转换过程，其实就是典型的“延续性传递编程风格”。因此挂起函数的底层实现技术会接受一个额外的Continuation的类型参数</li>
+</ol>
+</li>
+<li>async/await/yield详细工作原理</li>
 </ol>
 </li>
 <li>类型别名 typealias</li>
@@ -629,6 +647,42 @@
 <li>函数声明，函数参数，默认值，返回值，单表达式函数，不定数量参数varargs</li>
 <li>中缀标记法 （关键字 infix 标记函数）<ol>
 <li>优先级：infix 低于 算术运算符，类型转换，rangeTo；高于 布尔值运算符， &amp;&amp;， ||， is， in，</li>
+</ol>
+</li>
+<li>函数范围：<ol>
+<li>顶级函数，</li>
+<li>类函数，</li>
+<li>局部函数（函数中的函数），</li>
+<li>扩展函数，</li>
+<li>内联函数：<ol>
+<li>关键字inline 标识函数</li>
+<li>inline 既会影响到函数本身，也会影响到传递给它的lambda表达式：这两者都会被内联到调用处（因此会导致编译后代码体积增加，需要合理使用内联）</li>
+<li>noinline标识不进行内联使用</li>
+<li>内联属性：会将getter setter的内联到调用处</li>
+<li>对Public API内联函数的限制：<ol>
+<li>当一个内联函数为public 或 protected，则这个函数被认为是一个module的public api；其他module可以调用，并且被内联到调用处；此时可能会造成二进制代码不兼容的风险</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>高阶函数与lambda表达式<ol>
+<li>定义：高阶函数是一种特殊的函数，它可以用函数当做入参，或者返回一个函数</li>
+<li>lambda表现方式：<ol>
+<li>Lambda表达式用大括号括起来 { }</li>
+<li>参数（如果存在）定义在-&gt;之前，参数类型可以省略</li>
+<li>（如果-&gt;存在）函数体定义在-&gt;之后</li>
+<li>调用一个函数时，如果最后一个参数是函数类型，则可以用lambda表达式作为这函数参数的值</li>
+<li>调用函数时，如果仅有一个唯一的函数类型的参数，则整个（）可以省略</li>
+<li>使用下划线代替未使用到的参数</li>
+</ol>
+</li>
+<li>匿名函数</li>
+<li>闭包</li>
+<li>带有接受者的函数字面值</li>
+<li>缺点：高阶函数在运行时会带来一些不利：每个函数都是一个对象，而且它还要捕获一个闭包，也就是在函数体内部访问的那些外层变量。导致内存占用（函数对象和类都是会占用内存的）以及虚方法调用都会带来运行时的消耗；而很多情况下，编译器将lambda表达式内联在使用处，可以消除这些运行时消耗</li>
+</ol>
+</li>
+<li>尾递归函数 （关键字 tailrec 标识函数 ）替代某些循环算法，同时不会存在栈溢出异常；编译器会对代码进行优化，消除函数的递归调用，产生一段基于循环实现的，快速且高效的代码；不能将尾递归用在try、catch结构中</li>
 </ol>
 </li>
 </ol>
