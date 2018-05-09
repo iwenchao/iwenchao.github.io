@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="git," />
+  <meta name="keywords" content="kotlin," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="git的常用命令使用场景 本地仓库与git remote仓库的关联  首先要在github账户上，创建与本地仓库同名的仓库repository; 进入本地仓库的根目录，开始下面一系列的操作 可以选择创建readme.md文件；　echo “# -“ &amp;gt;&amp;gt; README.md 初始化该仓库；　git init 将创建的文件README.md文件放置暂存区；　git add README.">
-<meta name="keywords" content="git">
+<meta name="description" content="协程 挂起函数 async/await/yield   类型别名 typealias 与对象实例绑定的可调用的引用  操作符:: 用来得到一个成员的引用，指向一个具体的对象实例的方法或者属性   封闭类（sealed class）与数据类（data class） Kotlin1.1中删除了1.0中对封闭类与数据类的一些限制。过去封闭类的子类只能声明在内部，现在可以声明在同一个module内任何一">
+<meta name="keywords" content="kotlin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git的常用场景">
-<meta property="og:url" content="http://wenchaos.com/git的常用场景/index.html">
+<meta property="og:title" content="kotlin基本概念学习">
+<meta property="og:url" content="http://wenchaos.com/kotlin基本概念/index.html">
 <meta property="og:site_name" content="大王派我来巡山">
-<meta property="og:description" content="git的常用命令使用场景 本地仓库与git remote仓库的关联  首先要在github账户上，创建与本地仓库同名的仓库repository; 进入本地仓库的根目录，开始下面一系列的操作 可以选择创建readme.md文件；　echo “# -“ &amp;gt;&amp;gt; README.md 初始化该仓库；　git init 将创建的文件README.md文件放置暂存区；　git add README.">
+<meta property="og:description" content="协程 挂起函数 async/await/yield   类型别名 typealias 与对象实例绑定的可调用的引用  操作符:: 用来得到一个成员的引用，指向一个具体的对象实例的方法或者属性   封闭类（sealed class）与数据类（data class） Kotlin1.1中删除了1.0中对封闭类与数据类的一些限制。过去封闭类的子类只能声明在内部，现在可以声明在同一个module内任何一">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-21T07:38:12.000Z">
+<meta property="og:updated_time" content="2018-05-09T06:14:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git的常用场景">
-<meta name="twitter:description" content="git的常用命令使用场景 本地仓库与git remote仓库的关联  首先要在github账户上，创建与本地仓库同名的仓库repository; 进入本地仓库的根目录，开始下面一系列的操作 可以选择创建readme.md文件；　echo “# -“ &amp;gt;&amp;gt; README.md 初始化该仓库；　git init 将创建的文件README.md文件放置暂存区；　git add README.">
+<meta name="twitter:title" content="kotlin基本概念学习">
+<meta name="twitter:description" content="协程 挂起函数 async/await/yield   类型别名 typealias 与对象实例绑定的可调用的引用  操作符:: 用来得到一个成员的引用，指向一个具体的对象实例的方法或者属性   封闭类（sealed class）与数据类（data class） Kotlin1.1中删除了1.0中对封闭类与数据类的一些限制。过去封闭类的子类只能声明在内部，现在可以声明在同一个module内任何一">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://wenchaos.com/git的常用场景/"/>
+  <link rel="canonical" href="http://wenchaos.com/kotlin基本概念/"/>
 
 
 
 
 
-  <title>git的常用场景 | 大王派我来巡山</title>
+  <title>kotlin基本概念学习 | 大王派我来巡山</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wenchaos.com/git的常用场景/">
+    <link itemprop="mainEntityOfPage" href="http://wenchaos.com/kotlin基本概念/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wenchaos">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">git的常用场景</h1>
+          <h1 class="post-title" itemprop="name headline">kotlin基本概念学习</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-25T00:00:00+08:00">
-                2018-03-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T00:00:00+08:00">
+                2018-03-05
               </time>
             
 
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具类/" itemprop="url" rel="index">
-                    <span itemprop="name">工具类</span>
+                  <a href="/categories/笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">笔记</span>
                   </a>
                 </span>
 
@@ -335,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/git的常用场景/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="git的常用场景/" itemprop="commentCount"></span>
+                <a href="/kotlin基本概念/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="kotlin基本概念/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,7 +360,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,382
+                  2,506
                 </span>
               
 
@@ -376,7 +376,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  10
                 </span>
               
             </div>
@@ -397,110 +397,245 @@
       
 
       
-        <h1 id="git的常用命令"><a href="#git的常用命令" class="headerlink" title="git的常用命令"></a>git的常用命令</h1><h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><ol>
-<li><p>本地仓库与git remote仓库的关联</p>
-<ul>
-<li>首先要在github账户上，创建与本地仓库同名的仓库repository;</li>
-<li>进入本地仓库的根目录，开始下面一系列的操作<ol>
-<li>可以选择创建readme.md文件；　echo “# -“ &gt;&gt; README.md</li>
-<li>初始化该仓库；　git init</li>
-<li>将创建的文件README.md文件放置暂存区；　git add README.md</li>
-<li>将暂存区的修改提交; git commit -m “你的提交信息”</li>
-<li>将本地仓库推送到github上；git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:账户名/仓库名.git,git push -u origin master</li>
+        <ol>
+<li>协程<ol>
+<li>挂起函数</li>
+<li>async/await/yield</li>
 </ol>
 </li>
-<li>到此已经基本完成。但是还是需要将你的电脑配置一下<ol>
-<li>git config –global user.name “your account name”</li>
-<li>git config –global user.email “your account email”</li>
-<li>到此已经在当前用户配置了你的信息。下面需要生成你的ssh-key并添加到github上</li>
-<li>生成秘钥；ssh-keygen -t rsa -C “your account email” (连续回车三次)</li>
-<li>最后将公钥添加到git账户里，就OK啦。</li>
+<li>类型别名 typealias</li>
+<li>与对象实例绑定的可调用的引用 <ol>
+<li>操作符:: 用来得到一个成员的引用，指向一个具体的对象实例的方法或者属性</li>
 </ol>
 </li>
-<li><p>有时候工作环境和个人环境都需要一个秘钥，这时候可以在生成秘钥的时候，指定名字并且需要添加config文件进行指定</p>
-<ol>
-<li>生成指定名称的秘钥；ssh-keygen -t rsa -C “your account email” -f ~/.ssh/指定文件名</li>
-<li><p>添加特别的配置，在ssh目录下新建config文件，内容如下</p>
- <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host github-aysee</span><br><span class="line">HostName github.com</span><br><span class="line">User git</span><br><span class="line">IdentityFile <span class="symbol">C:</span>/Users/username/.ssh/aysee</span><br><span class="line">你应该可以看懂的吧－－</span><br></pre></td></tr></table></figure>
-<ol>
-<li>在指定项目下，指定作者<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name &quot;Author name&quot;</span><br><span class="line">git config user.email &quot;Author email&quot;</span><br></pre></td></tr></table></figure>
+<li>封闭类（sealed class）与数据类（data class）<ol>
+<li>Kotlin1.1中删除了1.0中对封闭类与数据类的一些限制。过去封闭类的子类只能声明在内部，现在可以声明在同一个module内任何一个地方；数据类可以继承其他类</li>
+</ol>
 </li>
+<li>在lambda中使用解构声明</li>
+<li>使用 _ 替代未使用的参数<ol>
+<li>对于接受多个参数的lambda表达式，可以使用 _ 来代替你未使用到的参数</li>
+<li>对于解构声明同样有效</li>
+<li>在数字字面值中使用 _ 如val oneMillion = 1_000_000</li>
+</ol>
+</li>
+<li>简洁的属性语法</li>
+<li>委托属性：by lazy{ }<ol>
+<li>局部的委托属性：可以用来定义一个延迟计算的局部变量（即 函数内部变量进行委托）</li>
+<li>委托属性的拦截：操作符provideDelegate</li>
+</ol>
+</li>
+<li>枚举值访问的通用方式</li>
+<li>操作符<ol>
+<li>onEach（）遍历集合与序列，对所有元素执行相同的操作，并返回iterator实例；与forEach类似</li>
+<li>also（）：类似于apply（）：它得到一个接受者，然后对接受者执行某些操作，最后返回接受者；不同的是also内部是it指代，apply内部是this指代</li>
+<li>takeIf（）类似于filter，但是前者适用于单只，并且满足条件，返回接受者，否则返回null；filter适用于集合序列；</li>
+<li>takeUnless与takeIf相反</li>
+<li>groupBy（）：用来对一个集合按照某个key进行分组，并同时合并所有的组。</li>
+</ol>
+</li>
+<li>数组处理函数</li>
+<li>常数内联 Constant inline：编译器现在可以将const val属性的值内联到这些属性被使用的地方</li>
+<li>智能类型转换</li>
+<li>允许将this::foo简写为::foo<ol>
+<li>绑定到this的成员上的可调用的引用，可以不用明确的指定接受者</li>
+</ol>
+</li>
+<li>基本语法：<ol>
+<li>定义包 package import 目录结构可以与包结构不一致</li>
+<li>函数定义 </li>
+<li>变量定义：val只读（不可变） var读写（可变）<ol>
+<li>属性与作用域</li>
+</ol>
+</li>
+<li>注释</li>
+<li>字符串模板 $</li>
+<li>if else条件表达式，返回最后一行</li>
+<li>when表达式</li>
+<li>范围 in  !in </li>
+<li>集合 val items = listOf(1,2,3)</li>
+<li>数据类 data class Nmae（val name:String）<ol>
+<li>所有属性的getter方法（var类型还有setter方法）</li>
+<li>equals</li>
+<li>hashCode</li>
+<li>toString</li>
+<li>copy</li>
+</ol>
+</li>
+<li>函数参数的指定默认值</li>
+<li>扩展函数</li>
+<li>单例 object SingleObj{  }</li>
+<li>如果不是null  ?.</li>
+<li>如果不是null … else   ?.exp1 ?:   exp2</li>
+<li>对同一个对象实例上调用多个方法  with（receiver）</li>
+<li>代码规范：遵循java</li>
+<li>扩展函数，中缀函数</li>
+<li>范围函数：apply/with/run/also/let<ol>
+<li>内部it：also，let</li>
+<li>内部this</li>
+<li>返回结果：上下文对象：apply，also</li>
+<li>返回结果：某个值：with，let，run</li>
+<li>来自链式调用 是否为null?.let/run/apply；否则with/also（receiver）{}</li>
+</ol>
+</li>
+<li>基本类型<ol>
+<li>数值类，Double Float Long Int Short Byte </li>
+<li>支持进制 2 0b，10，16 0x</li>
+</ol>
+</li>
+<li>相等性<ol>
+<li>== 内容</li>
+<li>=== 对象引用</li>
+</ol>
+</li>
+<li>数组 Array <ol>
+<li>创建方式 <ol>
+<li>arrayOf</li>
+<li>Array（size，lambda）</li>
+</ol>
+</li>
+<li>ByteArray，ShortArray，IntArray 避免数值对象装箱带来的性能损耗 与Array不存在关系</li>
+</ol>
+</li>
+<li>if when 表达式</li>
+<li>do..while，while，for <ol>
+<li>适用于iterator</li>
+<li>return ： 默认行为是从最内层函数返回</li>
+<li>break：结束最内层的循环</li>
+<li>continue ：在最内层循环中，结束当前，跳转到下一次循环</li>
+<li>@返回标签</li>
+</ol>
+</li>
+<li>类与对象<ol>
+<li>构造器 <ol>
+<li>主/次  主构造器没有任何修饰时可省略关键字constructor</li>
+<li>init{}初始化代码段</li>
+<li>构造器中可以直接使用val var来声明对象的属性</li>
+<li>如果类中有主构造器，则每个次级构造器必须委托给主构造器，要么直接委托，要么通过其他次级构造器间接委托 关键字this</li>
+<li>init代码块实际上会 成为主构造器的一部分；会作为次级构造器的第一条语句执行</li>
+</ol>
+</li>
+<li>包含内容<ol>
+<li>构造器+init代码块</li>
+<li>函数</li>
+<li>属性</li>
+<li>嵌套类，内部类</li>
+<li>对象声明</li>
+</ol>
+</li>
+<li>默认情况下kotlin中所有的类都是final的；关键字open显示指定，可以被继承</li>
+<li>子类中有主构造器，则在主构造器中使用其参数来初始化基类</li>
+<li>如果子类没有主构造器，则所有次级构造器都必须使用super关键字来初始化基类，或者间接委托</li>
+<li>方法覆盖 open override final</li>
+<li>属性覆盖：类似方法覆盖</li>
+<li>初始化顺序：<ol>
+<li>子类实例化构造过程中，首先需要初始化基类</li>
+<li>。。</li>
+</ol>
+</li>
+<li>覆盖的规则</li>
+<li>抽象类与接口  <ol>
+<li>默认open，可以有方法实现</li>
+<li>抽象类可以存储状态数据，接口则不行，</li>
+</ol>
+</li>
+<li>伴随对象：类似java静态方法</li>
+</ol>
+</li>
+<li>可见度修饰符  <ol>
+<li>public 默认</li>
+<li>internal：module模块内</li>
+<li>protected：同private，但是子类中可见</li>
+<li>private：当前代码文件内，子类中不可见</li>
+</ol>
+</li>
+<li>扩展<ol>
+<li>扩展函数：    （静态）</li>
+<li>扩展变量</li>
+<li>意义：解决java中各种Utils不美观而且逐渐混乱的写法</li>
+</ol>
+</li>
+<li>数据类</li>
+<li>封闭类</li>
+<li>泛型<ol>
+<li>上界 ？extends E ：接受的参数类型是一个E类型，包括 E子类</li>
+<li>生产者对应extends，消费者对应super</li>
+<li>kotlin中，使用’声明处的类型变异’，确保只会生产T类型，关键字out（协变注解）</li>
+<li>与out相反的是  ‘in’ 反向类型变异，只能用于消费者，如 Compareable</li>
+<li>星号<em>投射， Function&lt;</em> ,String&gt;</li>
+<li>泛型函数</li>
+<li>泛型约束  即上界约束</li>
+<li>类型擦除：kotlin只在编译器进行类型安全检查，泛型类型的实例不保存关于其类型参数的任何信息，比如Foo<int> 其类型信息会被擦除，只剩下Foo&lt;*&gt;</int></li>
+</ol>
+</li>
+<li>嵌套类Nested class：类似于java的静态内部类<ol>
+<li>class A{   class B{ }   }</li>
+</ol>
+</li>
+<li>内部类Inner class  ：类似于java的内部类，持有外部类对象的一个引用<ol>
+<li>class A{   inner class B{ }   }</li>
+</ol>
+</li>
+<li>匿名内部类：类似于接口回调 可以使用lambda表示</li>
+<li>枚举类 enum class Color{ RED，GREEN}<ol>
+<li>每个枚举类常数都是一个对象，都是该枚举类的一个实例</li>
+<li>也可以定义自己的匿名内部类</li>
+</ol>
+</li>
+<li>对象表达式与对象声明<ol>
+<li>有时我们需要在某个类基础上略作修改，但是又不希望重新声明一个新类，java中使用匿名内部类，kotlin中可以使用对象表达式或者对象声明</li>
+<li>对象表达式：  <ol>
+<li>setListenner(object : OnClickListener { } )</li>
+<li>val person = object{ var name:String=“john”}</li>
+<li>可以访问创建这个对象的代码范围内的变量</li>
+</ol>
+</li>
+<li>注意：只有在局部并且私有的声明范围内，匿名对象才可以被用作类型。如果匿名对象作为公开函数的返回类型，或者公开属性的类型，那么这个函数或者属性的真实类型，会被     声明为这个匿名 对象的超类</li>
+<li>对象声明： 不是一个表达式，因此不能出现在等式右边<ol>
+<li>object Room{ }  </li>
+<li>单例模式</li>
+<li>对象声明中的初始化是线程安全的</li>
+<li>伴随对象：<ol>
+<li>在一个类的内部进行对象声明 关键字companion；</li>
+<li>虽然伴随对象有些像java中类的静态成员，但是在运行期间，这些成员仍然是真是对象的实例的成员，它们与静态成员是不同的；举例来说就是，它们也可以实现接口</li>
+<li>如果使用@JvmStatic注解，则可以让伴随对象在JVM上被编译为真正的静态方法和静态域</li>
 </ol>
 </li>
 </ol>
 </li>
-</ul>
-</li>
-<li><p>一次git提交生命过程中遇到的兄弟们（这里并不准备详细的介绍这些哥们）</p>
-<ul>
-<li>新建文件/目录，修改，提交</li>
-<li><p>一般仓库中的文件可能存在于这三种状态</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. Untracked files 文件未被跟踪　【处于工作区】</span><br><span class="line">2. Changes to be committed 文件已经被暂存，这是下次提交的内容　【处于暂存区】</span><br><span class="line">3. Changes but not updated 文件被修改，但没有添加到暂存区　【工作区】</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在开始新的路上，要把有变化的文件添加到索引库中，这个时候首先要遇见：git add命令</p>
-<ol>
-<li>git add -A [path]: 表示把path内的所有的tracked文件那些被修改／被删除／以及untrack的文件，添加到索引库中</li>
-<li>git add -u [path]: 把path中所有的tracked文件，那些被修改／被删除的文件，添加到索引库中</li>
-<li>git add -i [path]: 可以查看到path中所有被修改过／被删除但是还没有提交的文件</li>
-<li>add兄弟家族还有好多，具体可以看看–help管家</li>
+<li>对象表达式与对象声明的不同：<ol>
+<li>对象表达式，在使用处立即执行初始化</li>
+<li>对象声明，是延迟初始化的，只会在首次访问到的时候进行初始化</li>
+<li>伴随对象会在对应的类被装载解析时初始化，语义上等同于java中的静态初始化块</li>
 </ol>
-</li>
-<li><p>经历了add家族的接待，那些被添加到索引库的文件即将遇到另外一个兄弟：git commit命令，</p>
-<ol>
-<li>git commit -m “提交的描述信息”　：提交暂存区的文件</li>
-<li>git commit -a -m “提交的描述信息”　：　提交暂存区以及工作区中已被tracked文件</li>
-<li>git commit –amend “再次补充添加上次提交的描述信息”：补充提交信息</li>
-</ol>
-</li>
-<li>经由commit的指引，我们来到了暂存区，这里都是即将要被push到老家的兄弟们：git push命令<ol>
-<li>该命令用于将本地分支更新到暂存区的文件，推送到远程主机：</li>
-<li>git push \&lt;远程主机&gt;　\&lt;本地分支&gt;:\&lt;远程分支名&gt; ; 一般常用 git push，其他更具体的用法请Ｇｏｏｇｌｅ</li>
-<li>常见的一些情况：<ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.git push origin master :表示　将本地分支master推送到origin主机的master分支，如果不存在，则新建</span><br><span class="line">2.git push origin :master 表示　删除指定的远程分支master　</span><br><span class="line">    等同于推送一个空本地分支到远程分支</span><br><span class="line">    git push origin --delete master</span><br><span class="line">3.git push 推送当前分支到远程</span><br><span class="line">4.git push --all　推送所有本地分支到远程</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
 </li>
 </ol>
 </li>
-</ul>
-</li>
-</ol>
-<ol>
-<li><p>天下大事，合久必分，分久必合。</p>
-<ul>
-<li><p>接下来git branch主要用法</p>
-<ol>
-<li>git branch 查看本地分支列表，当前分支“*”标示</li>
-<li>git branch \<branchname>　创建分支，基于当前HEAD指向的提交</branchname></li>
-<li>git branch \<branchname> \<start-point>　创建分支，基于指定的提交节点</start-point></branchname></li>
-<li>git branch -d \<branchname> 　删除分支，弱删除（删除时检查索要删除的分支是否已经合并到其他分支中，否则拒绝）</branchname></li>
-<li>git branch -D \<branchname>　强制删除</branchname></li>
-<li>git branch -m \<oldbranch>　\<newbranch> 重命名分支，如果版本库中已经存在newbranch的分支，拒绝</newbranch></oldbranch></li>
-<li>git branch -M \<oldbranch>　\<newbranch>　重命名分支，即使版本库中已经存在newbranch的分支，强制执行</newbranch></oldbranch></li>
+<li>委托<ol>
+<li>类的委托</li>
+<li>属性的委托：有许多具有共性的属性，虽然可以在每个使用这些属性的类中手动实现它们，但是能够只实现一次，然后将它放在库中供所有需要的类使用，那将会好很多。比如<ol>
+<li>延迟加载属性  by lazy：只有在初次访问时进行初始化，线程安全（如果不需要线程安全，则可以LayThreadSafetyMode.PUBLICATION，如果你确信初始化计算一定只发生在一个线程中，可以LayThreadSafetyMode.NONE来避免多余的线程同步带来的性能损耗）</li>
+<li>可观察属性：observable ： 属性在发生变化时，可以向监听器发生通知<br> 1. </li>
+<li>将多个属性保存在一个map中国馆过过过过，而不是将每个属性保存在一个独立的域</li>
 </ol>
 </li>
-<li><p>那么git merge主要用法：把一个分支或某个commit的修改合并到现在的分支上</p>
-<ol>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">usage: git merge [options] [&lt;commit&gt;...]</span><br><span class="line">   or: git merge [options] &lt;msg&gt; HEAD &lt;commit&gt;</span><br><span class="line">   or: git merge --abort</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>先切换到目的分支：git checkout destination-branch</p>
-</li>
-<li>再将目标分支合并到目的分支：　git merge aim-branch</li>
-<li>如果有冲突，先解决，再经过一次提交过程，完成合并</li>
+<li>为了解决这些以及其他问题，kotlin提供委托属性：<ol>
+<li>语法：val/var propertyName : Type by  expr0 ；by后边是表达式，即委托属性的get、set方法将要被委托给这个expr0的对象的getValue 和setValue。</li>
 </ol>
 </li>
-</ul>
+</ol>
+</li>
+<li>函数<ol>
+<li>函数声明，函数参数，默认值，返回值，单表达式函数，不定数量参数varargs</li>
+<li>中缀标记法 （关键字 infix 标记函数）<ol>
+<li>优先级：infix 低于 算术运算符，类型转换，rangeTo；高于 布尔值运算符， &amp;&amp;， ||， is， in，</li>
+</ol>
 </li>
 </ol>
-<ol>
-<li>关于git的一些必要概念<ul>
-<li>工作区：当前工程目录范围下</li>
-<li>暂存区：即stage，一般存放在工程根目录下的.git/index文件夹，</li>
-<li>版本库：工作区有一个隐藏目录.git　这个就是当前工程的版本库,是一个简单的数据库，其中包含所有用来维护与管理项目修订版本与历史信息。</li>
-</ul>
 </li>
 </ol>
-<p>##Git中rebase与merge的区别<br>    1. </p>
+</li>
+</ol>
 
       
     </div>
@@ -524,7 +659,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
+            <a href="/tags/kotlin/" rel="tag"># kotlin</a>
           
         </div>
       
@@ -537,18 +672,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/java的常用知识整理/" rel="next" title="Java的常用知识整理">
-                <i class="fa fa-chevron-left"></i> Java的常用知识整理
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Android开发需要知道gradle的常用知识/" rel="prev" title="Android开发需要知道gradle的常用知识">
-                Android开发需要知道gradle的常用知识 <i class="fa fa-chevron-right"></i>
+              <a href="/java的常用知识整理/" rel="prev" title="Java的常用知识整理">
+                Java的常用知识整理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -580,8 +711,8 @@
 
   
     <div class="comments" id="comments">
-      <div class="ds-thread" data-thread-key="git的常用场景/"
-           data-title="git的常用场景" data-url="http://wenchaos.com/git的常用场景/">
+      <div class="ds-thread" data-thread-key="kotlin基本概念/"
+           data-title="kotlin基本概念学习" data-url="http://wenchaos.com/kotlin基本概念/">
       </div>
     </div>
 
@@ -608,17 +739,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -699,22 +821,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git的常用命令"><span class="nav-number">1.</span> <span class="nav-text">git的常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用场景"><span class="nav-number">1.1.</span> <span class="nav-text">使用场景</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

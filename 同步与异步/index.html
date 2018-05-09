@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="git," />
+  <meta name="keywords" content="并发," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="git的常用命令使用场景 本地仓库与git remote仓库的关联  首先要在github账户上，创建与本地仓库同名的仓库repository; 进入本地仓库的根目录，开始下面一系列的操作 可以选择创建readme.md文件；　echo “# -“ &amp;gt;&amp;gt; README.md 初始化该仓库；　git init 将创建的文件README.md文件放置暂存区；　git add README.">
-<meta name="keywords" content="git">
+<meta name="description" content="在讲到同步，异步，并发，并行，阻塞与非阻塞这些概念的时候，一定会涉及到进程与线程的相关概念。因此需要先了解一下进程与线程。 #进程与线程  进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保护的基本单位。 线程（Thread）： 区别： 进程是系统资源分配的基本单位，线程是cpu调度，程序执行的最小单位。 进程有独立的地址空间，而同一进程中的线程共享改">
+<meta name="keywords" content="并发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git的常用场景">
-<meta property="og:url" content="http://wenchaos.com/git的常用场景/index.html">
+<meta property="og:title" content="同步与异步">
+<meta property="og:url" content="http://wenchaos.com/同步与异步/index.html">
 <meta property="og:site_name" content="大王派我来巡山">
-<meta property="og:description" content="git的常用命令使用场景 本地仓库与git remote仓库的关联  首先要在github账户上，创建与本地仓库同名的仓库repository; 进入本地仓库的根目录，开始下面一系列的操作 可以选择创建readme.md文件；　echo “# -“ &amp;gt;&amp;gt; README.md 初始化该仓库；　git init 将创建的文件README.md文件放置暂存区；　git add README.">
+<meta property="og:description" content="在讲到同步，异步，并发，并行，阻塞与非阻塞这些概念的时候，一定会涉及到进程与线程的相关概念。因此需要先了解一下进程与线程。 #进程与线程  进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保护的基本单位。 线程（Thread）： 区别： 进程是系统资源分配的基本单位，线程是cpu调度，程序执行的最小单位。 进程有独立的地址空间，而同一进程中的线程共享改">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-21T07:38:12.000Z">
+<meta property="og:updated_time" content="2018-04-21T08:42:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="git的常用场景">
-<meta name="twitter:description" content="git的常用命令使用场景 本地仓库与git remote仓库的关联  首先要在github账户上，创建与本地仓库同名的仓库repository; 进入本地仓库的根目录，开始下面一系列的操作 可以选择创建readme.md文件；　echo “# -“ &amp;gt;&amp;gt; README.md 初始化该仓库；　git init 将创建的文件README.md文件放置暂存区；　git add README.">
+<meta name="twitter:title" content="同步与异步">
+<meta name="twitter:description" content="在讲到同步，异步，并发，并行，阻塞与非阻塞这些概念的时候，一定会涉及到进程与线程的相关概念。因此需要先了解一下进程与线程。 #进程与线程  进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保护的基本单位。 线程（Thread）： 区别： 进程是系统资源分配的基本单位，线程是cpu调度，程序执行的最小单位。 进程有独立的地址空间，而同一进程中的线程共享改">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://wenchaos.com/git的常用场景/"/>
+  <link rel="canonical" href="http://wenchaos.com/同步与异步/"/>
 
 
 
 
 
-  <title>git的常用场景 | 大王派我来巡山</title>
+  <title>同步与异步 | 大王派我来巡山</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wenchaos.com/git的常用场景/">
+    <link itemprop="mainEntityOfPage" href="http://wenchaos.com/同步与异步/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wenchaos">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">git的常用场景</h1>
+          <h1 class="post-title" itemprop="name headline">同步与异步</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-25T00:00:00+08:00">
-                2018-03-25
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T00:00:00+08:00">
+                2018-04-09
               </time>
             
 
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/工具类/" itemprop="url" rel="index">
-                    <span itemprop="name">工具类</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
 
@@ -335,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/git的常用场景/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="git的常用场景/" itemprop="commentCount"></span>
+                <a href="/同步与异步/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="同步与异步/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,7 +360,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,382
+                  176
                 </span>
               
 
@@ -376,7 +376,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  1
                 </span>
               
             </div>
@@ -397,110 +397,18 @@
       
 
       
-        <h1 id="git的常用命令"><a href="#git的常用命令" class="headerlink" title="git的常用命令"></a>git的常用命令</h1><h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2><ol>
-<li><p>本地仓库与git remote仓库的关联</p>
-<ul>
-<li>首先要在github账户上，创建与本地仓库同名的仓库repository;</li>
-<li>进入本地仓库的根目录，开始下面一系列的操作<ol>
-<li>可以选择创建readme.md文件；　echo “# -“ &gt;&gt; README.md</li>
-<li>初始化该仓库；　git init</li>
-<li>将创建的文件README.md文件放置暂存区；　git add README.md</li>
-<li>将暂存区的修改提交; git commit -m “你的提交信息”</li>
-<li>将本地仓库推送到github上；git remote add origin <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:账户名/仓库名.git,git push -u origin master</li>
-</ol>
-</li>
-<li>到此已经基本完成。但是还是需要将你的电脑配置一下<ol>
-<li>git config –global user.name “your account name”</li>
-<li>git config –global user.email “your account email”</li>
-<li>到此已经在当前用户配置了你的信息。下面需要生成你的ssh-key并添加到github上</li>
-<li>生成秘钥；ssh-keygen -t rsa -C “your account email” (连续回车三次)</li>
-<li>最后将公钥添加到git账户里，就OK啦。</li>
-</ol>
-</li>
-<li><p>有时候工作环境和个人环境都需要一个秘钥，这时候可以在生成秘钥的时候，指定名字并且需要添加config文件进行指定</p>
+        <p>在讲到同步，异步，并发，并行，阻塞与非阻塞这些概念的时候，一定会涉及到进程与线程的相关概念。因此需要先了解一下进程与线程。</p>
+<p>#进程与线程</p>
 <ol>
-<li>生成指定名称的秘钥；ssh-keygen -t rsa -C “your account email” -f ~/.ssh/指定文件名</li>
-<li><p>添加特别的配置，在ssh目录下新建config文件，内容如下</p>
- <figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Host github-aysee</span><br><span class="line">HostName github.com</span><br><span class="line">User git</span><br><span class="line">IdentityFile <span class="symbol">C:</span>/Users/username/.ssh/aysee</span><br><span class="line">你应该可以看懂的吧－－</span><br></pre></td></tr></table></figure>
-<ol>
-<li>在指定项目下，指定作者<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name &quot;Author name&quot;</span><br><span class="line">git config user.email &quot;Author email&quot;</span><br></pre></td></tr></table></figure>
-</li>
+<li>进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保护的基本单位。</li>
+<li>线程（Thread）：</li>
+<li>区别：<ol>
+<li>进程是系统资源分配的基本单位，线程是cpu调度，程序执行的最小单位。</li>
+<li>进程有独立的地址空间，而同一进程中的线程共享改进程的地址空间。</li>
+<li>线程间通信</li>
 </ol>
 </li>
 </ol>
-</li>
-</ul>
-</li>
-<li><p>一次git提交生命过程中遇到的兄弟们（这里并不准备详细的介绍这些哥们）</p>
-<ul>
-<li>新建文件/目录，修改，提交</li>
-<li><p>一般仓库中的文件可能存在于这三种状态</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. Untracked files 文件未被跟踪　【处于工作区】</span><br><span class="line">2. Changes to be committed 文件已经被暂存，这是下次提交的内容　【处于暂存区】</span><br><span class="line">3. Changes but not updated 文件被修改，但没有添加到暂存区　【工作区】</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在开始新的路上，要把有变化的文件添加到索引库中，这个时候首先要遇见：git add命令</p>
-<ol>
-<li>git add -A [path]: 表示把path内的所有的tracked文件那些被修改／被删除／以及untrack的文件，添加到索引库中</li>
-<li>git add -u [path]: 把path中所有的tracked文件，那些被修改／被删除的文件，添加到索引库中</li>
-<li>git add -i [path]: 可以查看到path中所有被修改过／被删除但是还没有提交的文件</li>
-<li>add兄弟家族还有好多，具体可以看看–help管家</li>
-</ol>
-</li>
-<li><p>经历了add家族的接待，那些被添加到索引库的文件即将遇到另外一个兄弟：git commit命令，</p>
-<ol>
-<li>git commit -m “提交的描述信息”　：提交暂存区的文件</li>
-<li>git commit -a -m “提交的描述信息”　：　提交暂存区以及工作区中已被tracked文件</li>
-<li>git commit –amend “再次补充添加上次提交的描述信息”：补充提交信息</li>
-</ol>
-</li>
-<li>经由commit的指引，我们来到了暂存区，这里都是即将要被push到老家的兄弟们：git push命令<ol>
-<li>该命令用于将本地分支更新到暂存区的文件，推送到远程主机：</li>
-<li>git push \&lt;远程主机&gt;　\&lt;本地分支&gt;:\&lt;远程分支名&gt; ; 一般常用 git push，其他更具体的用法请Ｇｏｏｇｌｅ</li>
-<li>常见的一些情况：<ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.git push origin master :表示　将本地分支master推送到origin主机的master分支，如果不存在，则新建</span><br><span class="line">2.git push origin :master 表示　删除指定的远程分支master　</span><br><span class="line">    等同于推送一个空本地分支到远程分支</span><br><span class="line">    git push origin --delete master</span><br><span class="line">3.git push 推送当前分支到远程</span><br><span class="line">4.git push --all　推送所有本地分支到远程</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-<ol>
-<li><p>天下大事，合久必分，分久必合。</p>
-<ul>
-<li><p>接下来git branch主要用法</p>
-<ol>
-<li>git branch 查看本地分支列表，当前分支“*”标示</li>
-<li>git branch \<branchname>　创建分支，基于当前HEAD指向的提交</branchname></li>
-<li>git branch \<branchname> \<start-point>　创建分支，基于指定的提交节点</start-point></branchname></li>
-<li>git branch -d \<branchname> 　删除分支，弱删除（删除时检查索要删除的分支是否已经合并到其他分支中，否则拒绝）</branchname></li>
-<li>git branch -D \<branchname>　强制删除</branchname></li>
-<li>git branch -m \<oldbranch>　\<newbranch> 重命名分支，如果版本库中已经存在newbranch的分支，拒绝</newbranch></oldbranch></li>
-<li>git branch -M \<oldbranch>　\<newbranch>　重命名分支，即使版本库中已经存在newbranch的分支，强制执行</newbranch></oldbranch></li>
-</ol>
-</li>
-<li><p>那么git merge主要用法：把一个分支或某个commit的修改合并到现在的分支上</p>
-<ol>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">usage: git merge [options] [&lt;commit&gt;...]</span><br><span class="line">   or: git merge [options] &lt;msg&gt; HEAD &lt;commit&gt;</span><br><span class="line">   or: git merge --abort</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>先切换到目的分支：git checkout destination-branch</p>
-</li>
-<li>再将目标分支合并到目的分支：　git merge aim-branch</li>
-<li>如果有冲突，先解决，再经过一次提交过程，完成合并</li>
-</ol>
-</li>
-</ul>
-</li>
-</ol>
-<ol>
-<li>关于git的一些必要概念<ul>
-<li>工作区：当前工程目录范围下</li>
-<li>暂存区：即stage，一般存放在工程根目录下的.git/index文件夹，</li>
-<li>版本库：工作区有一个隐藏目录.git　这个就是当前工程的版本库,是一个简单的数据库，其中包含所有用来维护与管理项目修订版本与历史信息。</li>
-</ul>
-</li>
-</ol>
-<p>##Git中rebase与merge的区别<br>    1. </p>
 
       
     </div>
@@ -524,7 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/git/" rel="tag"># git</a>
+            <a href="/tags/并发/" rel="tag"># 并发</a>
           
         </div>
       
@@ -537,8 +445,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/java的常用知识整理/" rel="next" title="Java的常用知识整理">
-                <i class="fa fa-chevron-left"></i> Java的常用知识整理
+              <a href="/http的一路历程/" rel="next" title="http的一路历程">
+                <i class="fa fa-chevron-left"></i> http的一路历程
               </a>
             
           </div>
@@ -547,8 +455,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/Android开发需要知道gradle的常用知识/" rel="prev" title="Android开发需要知道gradle的常用知识">
-                Android开发需要知道gradle的常用知识 <i class="fa fa-chevron-right"></i>
+              <a href="/Notes/2018-04-09 08-24-49/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -580,8 +488,8 @@
 
   
     <div class="comments" id="comments">
-      <div class="ds-thread" data-thread-key="git的常用场景/"
-           data-title="git的常用场景" data-url="http://wenchaos.com/git的常用场景/">
+      <div class="ds-thread" data-thread-key="同步与异步/"
+           data-title="同步与异步" data-url="http://wenchaos.com/同步与异步/">
       </div>
     </div>
 
@@ -608,17 +516,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -699,22 +598,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#git的常用命令"><span class="nav-number">1.</span> <span class="nav-text">git的常用命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用场景"><span class="nav-number">1.1.</span> <span class="nav-text">使用场景</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
