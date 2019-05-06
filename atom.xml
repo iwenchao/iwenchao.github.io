@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wenchaos.com/"/>
-  <updated>2019-05-06T15:14:19.875Z</updated>
+  <updated>2019-05-06T15:24:04.997Z</updated>
   <id>http://wenchaos.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo+github搭建个人博客攻略</title>
+    <link href="http://wenchaos.com/%E5%B7%A5%E5%85%B7%E7%AF%87/hexo+github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%94%BB%E7%95%A5/"/>
+    <id>http://wenchaos.com/工具篇/hexo+github搭建博客攻略/</id>
+    <published>2018-04-09T16:00:00.000Z</published>
+    <updated>2019-05-06T15:24:04.997Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>随着国内开发者水平的提高，以及各个技术博客的平台相继出现。有些人更愿意将写的博客记录在自己的平台上，故而引出本文。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;随着国内开发者水平的提高，以及各个技术博客的平台相继出现。有些人更愿意将写的博客记录在自己的平台上，故而引出本文。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="工具，" scheme="http://wenchaos.com/categories/%E5%B7%A5%E5%85%B7%EF%BC%8C/"/>
+    
+    
+      <category term="工具，hexo，github" scheme="http://wenchaos.com/tags/%E5%B7%A5%E5%85%B7%EF%BC%8Chexo%EF%BC%8Cgithub/"/>
+    
+  </entry>
   
   <entry>
     <title>java后端搭建初稿</title>
