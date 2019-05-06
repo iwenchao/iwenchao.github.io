@@ -44,8 +44,8 @@
   
   <entry>
     <title>java后端搭建初稿</title>
-    <link href="http://wenchaos.com/java%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA%E5%88%9D%E7%A8%BF/"/>
-    <id>http://wenchaos.com/java后端搭建初稿/</id>
+    <link href="http://wenchaos.com/java%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/java%E5%90%8E%E7%AB%AF%E6%90%AD%E5%BB%BA%E5%88%9D%E7%A8%BF/"/>
+    <id>http://wenchaos.com/java后端开发/java后端搭建初稿/</id>
     <published>2018-04-08T16:00:00.000Z</published>
     <updated>2019-05-06T15:14:19.875Z</updated>
     
@@ -72,8 +72,8 @@
   
   <entry>
     <title>同步与异步</title>
-    <link href="http://wenchaos.com/%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5/"/>
-    <id>http://wenchaos.com/同步与异步/</id>
+    <link href="http://wenchaos.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5/"/>
+    <id>http://wenchaos.com/计算机基础/同步与异步/</id>
     <published>2018-04-08T16:00:00.000Z</published>
     <updated>2018-04-21T08:42:17.000Z</updated>
     
@@ -100,8 +100,8 @@
   
   <entry>
     <title>http的一路历程</title>
-    <link href="http://wenchaos.com/http%E7%9A%84%E4%B8%80%E8%B7%AF%E5%8E%86%E7%A8%8B/"/>
-    <id>http://wenchaos.com/http的一路历程/</id>
+    <link href="http://wenchaos.com/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/http%E7%9A%84%E4%B8%80%E8%B7%AF%E5%8E%86%E7%A8%8B/"/>
+    <id>http://wenchaos.com/网络基础/http的一路历程/</id>
     <published>2018-04-04T16:00:00.000Z</published>
     <updated>2018-04-21T07:37:23.000Z</updated>
     
@@ -126,8 +126,8 @@
   
   <entry>
     <title>Android开发需要知道gradle的常用知识</title>
-    <link href="http://wenchaos.com/Android%E5%BC%80%E5%8F%91%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93gradle%E7%9A%84%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86/"/>
-    <id>http://wenchaos.com/Android开发需要知道gradle的常用知识/</id>
+    <link href="http://wenchaos.com/android%E5%BC%80%E5%8F%91/Android%E5%BC%80%E5%8F%91%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93gradle%E7%9A%84%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86/"/>
+    <id>http://wenchaos.com/android开发/Android开发需要知道gradle的常用知识/</id>
     <published>2018-03-27T16:00:00.000Z</published>
     <updated>2018-04-21T08:04:27.000Z</updated>
     
@@ -152,8 +152,8 @@
   
   <entry>
     <title>git的常用场景</title>
-    <link href="http://wenchaos.com/git%E7%9A%84%E5%B8%B8%E7%94%A8%E5%9C%BA%E6%99%AF/"/>
-    <id>http://wenchaos.com/git的常用场景/</id>
+    <link href="http://wenchaos.com/%E5%B7%A5%E5%85%B7%E7%AF%87/git%E7%9A%84%E5%B8%B8%E7%94%A8%E5%9C%BA%E6%99%AF/"/>
+    <id>http://wenchaos.com/工具篇/git的常用场景/</id>
     <published>2018-03-24T16:00:00.000Z</published>
     <updated>2018-04-21T07:38:12.000Z</updated>
     
@@ -177,8 +177,8 @@
   
   <entry>
     <title>Java的常用知识整理</title>
-    <link href="http://wenchaos.com/java%E7%9A%84%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
-    <id>http://wenchaos.com/java的常用知识整理/</id>
+    <link href="http://wenchaos.com/java%E5%9F%BA%E7%A1%80%E7%AF%87/java%E7%9A%84%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
+    <id>http://wenchaos.com/java基础篇/java的常用知识整理/</id>
     <published>2018-03-24T16:00:00.000Z</published>
     <updated>2018-03-25T08:50:30.000Z</updated>
     
@@ -206,8 +206,8 @@
   
   <entry>
     <title>kotlin基本概念学习</title>
-    <link href="http://wenchaos.com/kotlin%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>http://wenchaos.com/kotlin基本概念/</id>
+    <link href="http://wenchaos.com/android%E5%BC%80%E5%8F%91/kotlin%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>http://wenchaos.com/android开发/kotlin基本概念/</id>
     <published>2018-03-04T16:00:00.000Z</published>
     <updated>2018-05-09T08:35:14.000Z</updated>
     

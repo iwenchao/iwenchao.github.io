@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="http," />
+  <meta name="keywords" content="并发," />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="HTTP诞生于1991年，是互联网领域一个基石性的协议。全世界电脑上的内容能互联起来，全拜HTTP所赐。因此好好的学习了解一下是必不可少的。 TCP/IP的分层管理这里呢其实有两种分层的方式，一种是">
-<meta name="keywords" content="http">
+<meta name="description" content="在讲到同步，异步，并发，并行，阻塞与非阻塞这些概念的时候，一定会涉及到进程与线程的相关概念。因此需要先了解一下进程与线程。 #进程与线程  进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保护的基本单位。 线程（Thread）： 区别： 进程是系统资源分配的基本单位，线程是cpu调度，程序执行的最小单位。 进程有独立的地址空间，而同一进程中的线程共享改">
+<meta name="keywords" content="并发">
 <meta property="og:type" content="article">
-<meta property="og:title" content="http的一路历程">
-<meta property="og:url" content="http://wenchaos.com/http的一路历程/index.html">
+<meta property="og:title" content="同步与异步">
+<meta property="og:url" content="http://wenchaos.com/计算机基础/同步与异步/index.html">
 <meta property="og:site_name" content="大王派我来巡山">
-<meta property="og:description" content="HTTP诞生于1991年，是互联网领域一个基石性的协议。全世界电脑上的内容能互联起来，全拜HTTP所赐。因此好好的学习了解一下是必不可少的。 TCP/IP的分层管理这里呢其实有两种分层的方式，一种是">
+<meta property="og:description" content="在讲到同步，异步，并发，并行，阻塞与非阻塞这些概念的时候，一定会涉及到进程与线程的相关概念。因此需要先了解一下进程与线程。 #进程与线程  进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保护的基本单位。 线程（Thread）： 区别： 进程是系统资源分配的基本单位，线程是cpu调度，程序执行的最小单位。 进程有独立的地址空间，而同一进程中的线程共享改">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-21T07:37:23.000Z">
+<meta property="og:updated_time" content="2018-04-21T08:42:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="http的一路历程">
-<meta name="twitter:description" content="HTTP诞生于1991年，是互联网领域一个基石性的协议。全世界电脑上的内容能互联起来，全拜HTTP所赐。因此好好的学习了解一下是必不可少的。 TCP/IP的分层管理这里呢其实有两种分层的方式，一种是">
+<meta name="twitter:title" content="同步与异步">
+<meta name="twitter:description" content="在讲到同步，异步，并发，并行，阻塞与非阻塞这些概念的时候，一定会涉及到进程与线程的相关概念。因此需要先了解一下进程与线程。 #进程与线程  进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保护的基本单位。 线程（Thread）： 区别： 进程是系统资源分配的基本单位，线程是cpu调度，程序执行的最小单位。 进程有独立的地址空间，而同一进程中的线程共享改">
 
 
 
@@ -122,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://wenchaos.com/http的一路历程/"/>
+  <link rel="canonical" href="http://wenchaos.com/计算机基础/同步与异步/"/>
 
 
 
 
 
-  <title>http的一路历程 | 大王派我来巡山</title>
+  <title>同步与异步 | 大王派我来巡山</title>
   
 
 
@@ -265,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wenchaos.com/http的一路历程/">
+    <link itemprop="mainEntityOfPage" href="http://wenchaos.com/计算机基础/同步与异步/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wenchaos">
@@ -282,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">http的一路历程</h1>
+          <h1 class="post-title" itemprop="name headline">同步与异步</h1>
         
 
         <div class="post-meta">
@@ -294,8 +294,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-05T00:00:00+08:00">
-                2018-04-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-09T00:00:00+08:00">
+                2018-04-09
               </time>
             
 
@@ -317,8 +317,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/网络/" itemprop="url" rel="index">
-                    <span itemprop="name">网络</span>
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
                   </a>
                 </span>
 
@@ -335,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/http的一路历程/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="http的一路历程/" itemprop="commentCount"></span>
+                <a href="/计算机基础/同步与异步/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="计算机基础/同步与异步/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -360,7 +360,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  78
+                  176
                 </span>
               
 
@@ -397,9 +397,19 @@
       
 
       
-        <p>HTTP诞生于1991年，是互联网领域一个基石性的协议。全世界电脑上的内容能互联起来，全拜HTTP所赐。因此好好的学习了解一下是必不可少的。</p>
-<h1 id="TCP-IP的分层管理"><a href="#TCP-IP的分层管理" class="headerlink" title="TCP/IP的分层管理"></a>TCP/IP的分层管理</h1><pre><code>这里呢其实有两种分层的方式，一种是
-</code></pre>
+        <p>在讲到同步，异步，并发，并行，阻塞与非阻塞这些概念的时候，一定会涉及到进程与线程的相关概念。因此需要先了解一下进程与线程。</p>
+<p>#进程与线程</p>
+<ol>
+<li>进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保护的基本单位。</li>
+<li>线程（Thread）：</li>
+<li>区别：<ol>
+<li>进程是系统资源分配的基本单位，线程是cpu调度，程序执行的最小单位。</li>
+<li>进程有独立的地址空间，而同一进程中的线程共享改进程的地址空间。</li>
+<li>线程间通信</li>
+</ol>
+</li>
+</ol>
+
       
     </div>
     
@@ -422,7 +432,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/http/" rel="tag"># http</a>
+            <a href="/tags/并发/" rel="tag"># 并发</a>
           
         </div>
       
@@ -435,8 +445,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Android开发需要知道gradle的常用知识/" rel="next" title="Android开发需要知道gradle的常用知识">
-                <i class="fa fa-chevron-left"></i> Android开发需要知道gradle的常用知识
+              <a href="/网络基础/http的一路历程/" rel="next" title="http的一路历程">
+                <i class="fa fa-chevron-left"></i> http的一路历程
               </a>
             
           </div>
@@ -445,8 +455,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/同步与异步/" rel="prev" title="同步与异步">
-                同步与异步 <i class="fa fa-chevron-right"></i>
+              <a href="/java后端开发/java后端搭建初稿/" rel="prev" title="java后端搭建初稿">
+                java后端搭建初稿 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -478,8 +488,8 @@
 
   
     <div class="comments" id="comments">
-      <div class="ds-thread" data-thread-key="http的一路历程/"
-           data-title="http的一路历程" data-url="http://wenchaos.com/http的一路历程/">
+      <div class="ds-thread" data-thread-key="计算机基础/同步与异步/"
+           data-title="同步与异步" data-url="http://wenchaos.com/计算机基础/同步与异步/">
       </div>
     </div>
 
@@ -506,17 +516,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -597,22 +598,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#TCP-IP的分层管理"><span class="nav-number">1.</span> <span class="nav-text">TCP/IP的分层管理</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
