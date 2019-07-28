@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wenchaos.com/"/>
-  <updated>2019-07-13T09:55:49.919Z</updated>
+  <updated>2019-07-27T02:21:40.035Z</updated>
   <id>http://wenchaos.com/</id>
   
   <author>
@@ -15,20 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://wenchaos.com/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/FFmpeg/%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F/"/>
-    <id>http://wenchaos.com/音视频基础/FFmpeg/日志系统/</id>
-    <published>2019-07-13T09:55:49.919Z</published>
-    <updated>2019-07-13T09:55:49.919Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>android中侧边栏的使用剖析</title>
@@ -45,6 +31,24 @@
     
     
       <category term="android" scheme="http://wenchaos.com/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ffmepg中的日志操作</title>
+    <link href="http://wenchaos.com/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/FFmpeg/%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://wenchaos.com/音视频基础/FFmpeg/日志系统/</id>
+    <published>2018-08-16T16:00:00.000Z</published>
+    <updated>2019-07-28T07:53:33.192Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="ffmpeg" scheme="http://wenchaos.com/categories/ffmpeg/"/>
+    
+    
+      <category term="ffmpeg" scheme="http://wenchaos.com/tags/ffmpeg/"/>
     
   </entry>
   
@@ -129,6 +133,31 @@
   </entry>
   
   <entry>
+    <title>c是一门值得学习的语言呢</title>
+    <link href="http://wenchaos.com/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/"/>
+    <id>http://wenchaos.com/编程语言/c语言入门总结/</id>
+    <published>2018-04-08T16:00:00.000Z</published>
+    <updated>2019-07-13T09:55:28.360Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h1 id="3。数据类型"><a href="#3。数据类型" class="headerlink" title="3。数据类型"></a>3。数据类型</h1><ol><li>2.<br>3.</li><li><p>实型数据（又称浮点类型）</p><ul><li>实型常量的表示方法<ol><li>小数形式</li><li>指数形式</li></ol></li><li>实型变量<ol><li>在内存中的存放形式<ul><li>一般占4个字节byte（32位）</li></ul></li><li>实型变量的分类<ol><li>单精度float：4个字节</li><li>双精度double：8个字节</li><li>长双精度long double: </li></ol></li></ol></li></ul></li><li><p>结构体：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">struct st&#123;</span><br><span class="line">    int a;//成员a</span><br><span class="line">    int b;//成员b</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li><li><p>枚举</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">enum em&#123;</span><br><span class="line">    red=0,</span><br><span class="line">    green,</span><br><span class="line">    black</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>文件操作</p><ol><li>文件类型 FILE* file</li><li>打开文件 FILE* fopen(path,mode)</li><li>fwrite/fread</li><li>fclose</li><li>文件游标操作 rewind</li></ol></li><li><p>指针</p><ol><li>它就是变量在内存中的一个地址；</li><li>指针本身的运算；</li><li>指针所指的内容的运算；</li></ol></li></ol><ol><li><p>操作系统如何管理内存；</p><ol><li>内核空间</li><li>栈控件；</li><li>引用库</li><li>堆空间</li><li>内存映射</li><li><p>内存的分配与释放；</p><ol><li>分配： void* mem = malloc(size);</li><li>释放：free(mem);</li></ol></li><li><p>内存泄漏与野指针</p><ol><li>不断的向系统申请内存；</li><li>申请内存不用，也不释放；</li><li>占用别人的内存成为野指针；</li></ol></li></ol></li><li><p>函数指针</p><ol><li>返回值类型 (* 指针变量名)([形参列表])<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int func(int x)函数</span><br><span class="line">int （*f）(int x);</span><br><span class="line">f =func;</span><br></pre></td></tr></table></figure></li></ol></li><li><p>编译器；</p><ol><li>gcc：linux下的编译器</li><li>clang：mac下使用的编译器</li><li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">gcc/clang -g -O2 -o test test.c -I</span><br><span class="line">注释：</span><br><span class="line">1. -g:输出文件中的调试信息；</span><br><span class="line">2. -O：对输出文件做指令优化；</span><br><span class="line">3. -o：输出文件</span><br><span class="line">4. -I：指定头文件；</span><br><span class="line">5. -L：指定三方库文件位置；</span><br><span class="line">6. -l:指定使用哪个库</span><br></pre></td></tr></table></figure></li><li><p>编译过程：</p><ol><li>预编译：#\&lt;include>，将引用到文件，头文件加载</li><li>编译</li><li>链接：将系统库和三方库 与编译好的项目代码进行合并<ol><li>动态链接：代码执行中进行链接</li><li>静态链接: </li></ol></li></ol></li></ol></li><li><p>调试器</p><ol><li>gdb：</li><li>lldb：</li></ol></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;h1 id=&quot;3。数据类型&quot;&gt;&lt;a href=&quot;#3。数据类型&quot; class=&quot;headerlink&quot; title=&quot;3。数据类型&quot;&gt;&lt;/a&gt;3
+      
+    
+    </summary>
+    
+      <category term="java" scheme="http://wenchaos.com/categories/java/"/>
+    
+    
+      <category term="并发" scheme="http://wenchaos.com/tags/%E5%B9%B6%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>同步与异步</title>
     <link href="http://wenchaos.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E5%90%8C%E6%AD%A5%E4%B8%8E%E5%BC%82%E6%AD%A5/"/>
     <id>http://wenchaos.com/计算机基础/同步与异步/</id>
@@ -145,31 +174,6 @@
 &lt;p&gt;#进程与线程&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;进程（Process）：具有独立功能的程序在某个数据集合上的一次运行活动；是OS进行资源分配和保
-      
-    
-    </summary>
-    
-      <category term="java" scheme="http://wenchaos.com/categories/java/"/>
-    
-    
-      <category term="并发" scheme="http://wenchaos.com/tags/%E5%B9%B6%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>c是一门值得学习的语言呢</title>
-    <link href="http://wenchaos.com/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/c%E8%AF%AD%E8%A8%80%E5%85%A5%E9%97%A8%E6%80%BB%E7%BB%93/"/>
-    <id>http://wenchaos.com/编程语言/c语言入门总结/</id>
-    <published>2018-04-08T16:00:00.000Z</published>
-    <updated>2019-07-13T09:55:28.360Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h1 id="3。数据类型"><a href="#3。数据类型" class="headerlink" title="3。数据类型"></a>3。数据类型</h1><ol><li>2.<br>3.</li><li><p>实型数据（又称浮点类型）</p><ul><li>实型常量的表示方法<ol><li>小数形式</li><li>指数形式</li></ol></li><li>实型变量<ol><li>在内存中的存放形式<ul><li>一般占4个字节byte（32位）</li></ul></li><li>实型变量的分类<ol><li>单精度float：4个字节</li><li>双精度double：8个字节</li><li>长双精度long double: </li></ol></li></ol></li></ul></li><li><p>结构体：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">struct st&#123;</span><br><span class="line">    int a;//成员a</span><br><span class="line">    int b;//成员b</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li><li><p>枚举</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">enum em&#123;</span><br><span class="line">    red=0,</span><br><span class="line">    green,</span><br><span class="line">    black</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>文件操作</p><ol><li>文件类型 FILE* file</li><li>打开文件 FILE* fopen(path,mode)</li><li>fwrite/fread</li><li>fclose</li><li>文件游标操作 rewind</li></ol></li><li><p>指针</p><ol><li>它就是变量在内存中的一个地址；</li><li>指针本身的运算；</li><li>指针所指的内容的运算；</li></ol></li></ol><ol><li><p>操作系统如何管理内存；</p><ol><li>内核空间</li><li>栈控件；</li><li>引用库</li><li>堆空间</li><li>内存映射</li><li><p>内存的分配与释放；</p><ol><li>分配： void* mem = malloc(size);</li><li>释放：free(mem);</li></ol></li><li><p>内存泄漏与野指针</p><ol><li>不断的向系统申请内存；</li><li>申请内存不用，也不释放；</li><li>占用别人的内存成为野指针；</li></ol></li></ol></li><li><p>函数指针</p><ol><li>返回值类型 (* 指针变量名)([形参列表])<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">int func(int x)函数</span><br><span class="line">int （*f）(int x);</span><br><span class="line">f =func;</span><br></pre></td></tr></table></figure></li></ol></li><li><p>编译器；</p><ol><li>gcc：linux下的编译器</li><li>clang：mac下使用的编译器</li><li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">gcc/clang -g -O2 -o test test.c -I</span><br><span class="line">注释：</span><br><span class="line">1. -g:输出文件中的调试信息；</span><br><span class="line">2. -O：对输出文件做指令优化；</span><br><span class="line">3. -o：输出文件</span><br><span class="line">4. -I：指定头文件；</span><br><span class="line">5. -L：指定三方库文件位置；</span><br><span class="line">6. -l:指定使用哪个库</span><br></pre></td></tr></table></figure></li><li><p>编译过程：</p><ol><li>预编译：#\&lt;include>，将引用到文件，头文件加载</li><li>编译</li><li>链接：将系统库和三方库 与编译好的项目代码进行合并<ol><li>动态链接：代码执行中进行链接</li><li>静态链接: </li></ol></li></ol></li></ol></li><li><p>调试器</p><ol><li>gdb：</li><li>lldb：</li></ol></li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;h1 id=&quot;3。数据类型&quot;&gt;&lt;a href=&quot;#3。数据类型&quot; class=&quot;headerlink&quot; title=&quot;3。数据类型&quot;&gt;&lt;/a&gt;3
       
     
     </summary>
