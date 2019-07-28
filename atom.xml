@@ -71,6 +71,20 @@
   </entry>
   
   <entry>
+    <title>multiDex的由来</title>
+    <link href="http://wenchaos.com/android%E5%BC%80%E5%8F%91/multiDex%E7%9A%84%E7%94%B1%E6%9D%A5/"/>
+    <id>http://wenchaos.com/android开发/multiDex的由来/</id>
+    <published>2019-01-01T16:00:00.000Z</published>
+    <updated>2019-07-28T13:40:57.600Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>android接入ffmpeg的介绍</title>
     <link href="http://wenchaos.com/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/android%E6%8E%A5%E5%85%A5ffmpeg%E7%9A%84%E4%BB%8B%E7%BB%8D/"/>
     <id>http://wenchaos.com/音视频基础/android接入ffmpeg的介绍/</id>
@@ -325,32 +339,6 @@
   </entry>
   
   <entry>
-    <title>Android开发需要知道gradle的常用知识</title>
-    <link href="http://wenchaos.com/android%E5%BC%80%E5%8F%91/Android%E5%BC%80%E5%8F%91%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93gradle%E7%9A%84%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86/"/>
-    <id>http://wenchaos.com/android开发/Android开发需要知道gradle的常用知识/</id>
-    <published>2018-03-27T16:00:00.000Z</published>
-    <updated>2018-04-21T08:04:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>#</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;#&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-      <category term="工具类" scheme="http://wenchaos.com/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
-    
-    
-      <category term="gradle" scheme="http://wenchaos.com/tags/gradle/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Java的常用知识整理</title>
     <link href="http://wenchaos.com/java%E5%9F%BA%E7%A1%80%E7%AF%87/java%E7%9A%84%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86%E6%95%B4%E7%90%86/"/>
     <id>http://wenchaos.com/java基础篇/java的常用知识整理/</id>
@@ -376,6 +364,32 @@
     
     
       <category term="java" scheme="http://wenchaos.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android开发需要知道gradle的常用知识</title>
+    <link href="http://wenchaos.com/android%E5%BC%80%E5%8F%91/Android%E5%BC%80%E5%8F%91%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93gradle%E7%9A%84%E5%B8%B8%E7%94%A8%E7%9F%A5%E8%AF%86/"/>
+    <id>http://wenchaos.com/android开发/Android开发需要知道gradle的常用知识/</id>
+    <published>2018-03-27T16:00:00.000Z</published>
+    <updated>2018-04-21T08:04:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>#</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="工具类" scheme="http://wenchaos.com/categories/%E5%B7%A5%E5%85%B7%E7%B1%BB/"/>
+    
+    
+      <category term="gradle" scheme="http://wenchaos.com/tags/gradle/"/>
     
   </entry>
   
