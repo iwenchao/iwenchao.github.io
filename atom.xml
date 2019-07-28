@@ -35,6 +35,31 @@
   </entry>
   
   <entry>
+    <title>android接入ffmpeg的介绍</title>
+    <link href="http://wenchaos.com/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/android%E6%8E%A5%E5%85%A5ffmpeg%E7%9A%84%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://wenchaos.com/音视频基础/android接入ffmpeg的介绍/</id>
+    <published>2018-10-08T16:00:00.000Z</published>
+    <updated>2019-07-28T07:54:07.920Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h3 id="必备知识"><a href="#必备知识" class="headerlink" title="必备知识"></a>必备知识</h3><ol><li>JNI</li><li>CPU架构</li><li>交叉编译</li><li>NDK</li><li>ffmpeg相关</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;h3 id=&quot;必备知识&quot;&gt;&lt;a href=&quot;#必备知识&quot; class=&quot;headerlink&quot; title=&quot;必备知识&quot;&gt;&lt;/a&gt;必备知识&lt;/h
+      
+    
+    </summary>
+    
+      <category term="android，ffmpeg" scheme="http://wenchaos.com/categories/android%EF%BC%8Cffmpeg/"/>
+    
+    
+      <category term="音视频" scheme="http://wenchaos.com/tags/%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ffmepg中的日志操作</title>
     <link href="http://wenchaos.com/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/FFmpeg/%E6%97%A5%E5%BF%97%E7%B3%BB%E7%BB%9F/"/>
     <id>http://wenchaos.com/音视频基础/FFmpeg/日志系统/</id>
@@ -182,31 +207,6 @@
     
     
       <category term="并发" scheme="http://wenchaos.com/tags/%E5%B9%B6%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>android接入ffmpeg的介绍</title>
-    <link href="http://wenchaos.com/%E9%9F%B3%E8%A7%86%E9%A2%91%E5%9F%BA%E7%A1%80/android%E6%8E%A5%E5%85%A5ffmpeg%E7%9A%84%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://wenchaos.com/音视频基础/android接入ffmpeg的介绍/</id>
-    <published>2018-04-08T16:00:00.000Z</published>
-    <updated>2019-07-08T15:37:38.092Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h3 id="必备知识"><a href="#必备知识" class="headerlink" title="必备知识"></a>必备知识</h3><ol><li>JNI</li><li>CPU架构</li><li>交叉编译</li><li>NDK</li><li>ffmpeg相关</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;h3 id=&quot;必备知识&quot;&gt;&lt;a href=&quot;#必备知识&quot; class=&quot;headerlink&quot; title=&quot;必备知识&quot;&gt;&lt;/a&gt;必备知识&lt;/h
-      
-    
-    </summary>
-    
-      <category term="android，ffmpeg" scheme="http://wenchaos.com/categories/android%EF%BC%8Cffmpeg/"/>
-    
-    
-      <category term="音视频" scheme="http://wenchaos.com/tags/%E9%9F%B3%E8%A7%86%E9%A2%91/"/>
     
   </entry>
   
