@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wenchaos.com/"/>
-  <updated>2019-07-27T02:21:40.035Z</updated>
+  <updated>2019-07-28T08:47:09.735Z</updated>
   <id>http://wenchaos.com/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mergeExtDexDebug出现的问题</title>
+    <link href="http://wenchaos.com/%E9%97%AE%E9%A2%98%E5%86%8C/mergeExtDexdebugFail/"/>
+    <id>http://wenchaos.com/问题册/mergeExtDexdebugFail/</id>
+    <published>2019-04-06T16:00:00.000Z</published>
+    <updated>2019-07-28T08:47:09.735Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="android" scheme="http://wenchaos.com/categories/android/"/>
+    
+    
+      <category term="问题册" scheme="http://wenchaos.com/tags/%E9%97%AE%E9%A2%98%E5%86%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>android中侧边栏的使用剖析</title>
@@ -31,6 +49,24 @@
     
     
       <category term="android" scheme="http://wenchaos.com/tags/android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>android-support库迁移到androidx</title>
+    <link href="http://wenchaos.com/%E9%97%AE%E9%A2%98%E5%86%8C/android-support%E7%89%88%E6%9C%AC%E8%BF%81%E7%A7%BB%E5%88%B0androidx/"/>
+    <id>http://wenchaos.com/问题册/android-support版本迁移到androidx/</id>
+    <published>2019-03-04T16:00:00.000Z</published>
+    <updated>2019-07-28T08:53:28.797Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="android" scheme="http://wenchaos.com/categories/android/"/>
+    
+    
+      <category term="问题册" scheme="http://wenchaos.com/tags/%E9%97%AE%E9%A2%98%E5%86%8C/"/>
     
   </entry>
   
