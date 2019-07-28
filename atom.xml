@@ -433,4 +433,32 @@
     
   </entry>
   
+  <entry>
+    <title>hexo常用命令</title>
+    <link href="http://wenchaos.com/%E5%B7%A5%E5%85%B7%E7%AF%87/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://wenchaos.com/工具篇/hexo常用命令/</id>
+    <published>2017-05-11T16:00:00.000Z</published>
+    <updated>2019-07-28T09:17:07.876Z</updated>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><p>#前言</p><p>在使用hexo+github自己搭建的博客站点时，免不了要常常用到hexo相关命令。而工作忙起来后总会遗忘这些很简单的命令。所以在这里将之整理，方便随时查看。</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>在使用hexo前，应该是需要安装node&amp;npm&amp;git工具。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g //全局安装hexo</span><br><span class="line">npm update hexo -g //更新全局的hexo</span><br><span class="line">hexo init [文件夹名称]//初始化</span><br><span class="line">cd folder</span><br><span class="line">npm inistall //在folder目录下安装npm，此时可以在本地启动hexo server，进行预览博客主页</span><br></pre></td></tr></table></figure><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>注意在使用hexo时，所有的命令都需要在相应的文件夹下执行</p><h3 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;我的博客&quot; // hexo new &quot;我的博客&quot; #新建文章</span><br><span class="line">hexo g //hexo generate#生成</span><br><span class="line">hexo p // hexo publish</span><br><span class="line">hexo s // hexo server #启动服务预览</span><br><span class="line">hexo d //hexo deploy#部署到远程服务器上</span><br></pre></td></tr></table></figure><h3 id="服务器端"><a href="#服务器端" class="headerlink" title="服务器端"></a>服务器端</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。</span><br><span class="line">hexo server -s #静态模式</span><br><span class="line">hexo server -p 5000 #更改端口</span><br><span class="line">hexo server -i 192.168.1.1 #自定义 IP</span><br><span class="line"></span><br><span class="line">hexo clean #清除缓存 网页正常情况下可以忽略此条命令</span><br><span class="line">hexo g #生成静态网页</span><br><span class="line">hexo d #开始部署</span><br></pre></td></tr></table></figure><h3 id="监视文件变动"><a href="#监视文件变动" class="headerlink" title="监视文件变动"></a>监视文件变动</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate #使用 Hexo 生成静态文件快速而且简单</span><br><span class="line">hexo generate --watch #监视文件变动</span><br></pre></td></tr></table></figure><h3 id="完成后部署"><a href="#完成后部署" class="headerlink" title="完成后部署"></a>完成后部署</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">两个命令的作用是相同的</span><br><span class="line">hexo generate --deploy  //hexo deploy -g</span><br><span class="line">hexo deploy --generate</span><br></pre></td></tr></table></figure><h1 id="模板"><a href="#模板" class="headerlink" title="模板"></a>模板</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line"></span><br><span class="line">hexo new [layout] &lt;title&gt;</span><br><span class="line">hexo new photo &quot;My Gallery&quot;</span><br><span class="line">hexo new &quot;Hello World&quot; --lang tw</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">文章标题</span><br><span class="line">title: 使用Hexo搭建个人博客</span><br><span class="line">layout: post</span><br><span class="line">date: 2014-03-03 19:07:43</span><br><span class="line">comments: true</span><br><span class="line">categories: Blog</span><br><span class="line">tags: [Hexo]</span><br><span class="line">keywords: Hexo, Blog</span><br><span class="line">description: 生命在于折腾，又把博客折腾到Hexo了。给Hexo点赞。</span><br></pre></td></tr></table></figure><h1 id="文章摘要"><a href="#文章摘要" class="headerlink" title="文章摘要"></a>文章摘要</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">以上是文章摘要 </span><br><span class="line">&lt;!--more--&gt;</span><br><span class="line">以下是余下全文</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;[TOC]&lt;/p&gt;
+&lt;p&gt;#前言&lt;/p&gt;
+&lt;p&gt;在使用hexo+github自己搭建的博客站点时，免不了要常常用到hexo相关命令。而工作忙起来后总会遗忘这些很简单的命令。所以在这里将之整理，方便随时查看。&lt;/p&gt;
+&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; cla
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="http://wenchaos.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="工具，hexo" scheme="http://wenchaos.com/tags/%E5%B7%A5%E5%85%B7%EF%BC%8Chexo/"/>
+    
+  </entry>
+  
 </feed>
