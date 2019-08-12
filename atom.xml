@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wenchaos.com/"/>
-  <updated>2019-07-28T08:47:09.735Z</updated>
+  <updated>2019-08-12T14:14:18.030Z</updated>
   <id>http://wenchaos.com/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://wenchaos.com/%E5%B7%A5%E5%85%B7%E7%AF%87/md%E6%97%A5%E5%B8%B8%E8%AF%AD%E6%B3%95/"/>
+    <id>http://wenchaos.com/工具篇/md日常语法/</id>
+    <published>2019-08-12T14:14:02.598Z</published>
+    <updated>2019-08-12T14:14:18.030Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>mergeExtDexDebug出现的问题</title>
@@ -341,28 +355,25 @@
   </entry>
   
   <entry>
-    <title>http的一路历程</title>
-    <link href="http://wenchaos.com/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/http%E7%9A%84%E4%B8%80%E8%B7%AF%E5%8E%86%E7%A8%8B/"/>
-    <id>http://wenchaos.com/网络基础/http的一路历程/</id>
+    <title>兄台，这本网络秘籍是你的吗</title>
+    <link href="http://wenchaos.com/%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/%E5%85%84%E5%8F%B0%EF%BC%8C%E8%BF%99%E6%9C%AC%E7%BD%91%E7%BB%9C%E7%A7%98%E7%B1%8D%E6%98%AF%E4%BD%A0%E7%9A%84%E5%90%97/"/>
+    <id>http://wenchaos.com/网络基础/兄台，这本网络秘籍是你的吗/</id>
     <published>2018-04-04T16:00:00.000Z</published>
-    <updated>2019-07-28T01:57:18.619Z</updated>
+    <updated>2019-08-12T14:35:04.507Z</updated>
     
-    <content type="html"><![CDATA[<p>HTTP诞生于1991年，是互联网领域一个基石性的协议。全世界电脑上的内容能互联起来，全拜HTTP所赐。因此好好的学习了解一下是必不可少的。</p><h1 id="TCP-IP的分层管理"><a href="#TCP-IP的分层管理" class="headerlink" title="TCP/IP的分层管理"></a>TCP/IP的分层管理</h1><pre><code>这里呢其实有两种分层的方式，一种是</code></pre>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>作为软件工程师，必须要掌握诸多计算机领域的相关基础。其中计算机网络就好比武林秘籍中的洗髓经，每日勤加练习，必定能够对上层修为更加纯熟。那么本文则主要阐述了一些计算机网络的重点部分。</p><h1 id="网络技术的基本原理"><a href="#网络技术的基本原理" class="headerlink" title="网络技术的基本原理"></a>网络技术的基本原理</h1><p>计算机网络的核心内容就是网络协议的学习。网络协议是计算机网络中进行数据交换以及数据传输的建立的标准。因为不同用户的数据终端可能采取的字符集不同，所以必须要在一致的标准协议下进行。</p><h2 id="网络层次划分"><a href="#网络层次划分" class="headerlink" title="网络层次划分"></a>网络层次划分</h2><h3 id="OSI七层网络模型"><a href="#OSI七层网络模型" class="headerlink" title="OSI七层网络模型"></a>OSI七层网络模型</h3><ol><li>应用层：为操作系统或网络应用程序提供访问网络服务的接口。</li><li>表示层：<ol><li>作用：表示层的数据转换包括数据的加密、压缩、格式转换等。以保证一个主机应用层信息可以被另一个主机的应用程序理解。</li></ol></li><li>会话层：<ol><li>作用：<ol><li>会话层管理主机之间的会话进程，即负责建立、管理、终止进程之间的会话。</li><li>会话层还利用在数据中插入校验点来实现数据的同步。</li></ol></li></ol></li><li>传输层：第一个端到端，即主机到主机的层次。<ol><li>作用：<ol><li>传输层负责将上层数据分段并提供端到端的、可靠的或不可靠的传输。</li><li>传输层还要处理端到端的差错控制和流量控制问题</li></ol></li><li>在这一层，信息传送的协议数据单元称为段或报文。</li><li>主要协议：<ol><li>TCP协议：传输控制协议</li><li>UDP协议：用户数据包协议</li></ol></li><li>重要设备：网关</li></ol></li><li>网络层：实现两个端系统之间的数据透明传送，具体功能包括<strong>寻址</strong>和<strong>路由选择</strong>、<strong>连接的建立、保持和终止等</strong>。<ol><li>重要的协议：<ol><li>IP协议<ol><li>仅仅提供不可靠，无连接的传输协议。</li><li>主要功能：<ol><li>无连接输数据报传输；</li><li>数据报路由选择</li><li>差错控制</li></ol></li></ol></li><li>ARP：地址解析协议</li><li>RARP：反向地址解析协议</li><li>ICMP：Intel报文协议</li></ol></li><li>网络层负责对子网间的数据包进行路由选择。此外，网络层还可以实现拥塞控制、网际互连等功能；</li><li>重要的设备：路由器</li></ol></li><li>数据链路层：在物理层提供的服务的基础上向网络层提供服务，其最基本的服务<strong>是将源自网络层来的数据可靠地传输到相邻节点的目标机网络层。</strong> 必须具备的功能是：如何将数据组合的数据块（数据帧frame），如何控制帧在物理信道上的传输，如何处理传输差错，如何调节发送接收速率，以及两个网络实体之间的数据链路通路的建立，维持和释放的管理。<ol><li>物理地址寻址</li><li>数据的成帧</li><li>流量控制</li><li>数据的检错</li><li>重发</li><li>主要协议：以太网协议</li><li>重要设备：网桥；交换机</li></ol></li><li>物理层：物理层确保原始的数据可在各种物理媒体上传输<ol><li>中继器</li><li>集线器</li></ol></li></ol><h3 id="TCP-IP四层模型"><a href="#TCP-IP四层模型" class="headerlink" title="TCP/IP四层模型"></a>TCP/IP四层模型</h3><ol><li>应用层</li><li>传输层</li><li>网络层</li><li>数据链路层</li></ol><p>由于早期ARPA公司率先在市场中推广了TCP/IP协议，使得后来ISO组织制定的OSI七层网络模型难以普及。这么看来率先抢占市场对于一个事物的发展是多么的重要！</p><h3 id="七层与四层之间的关系"><a href="#七层与四层之间的关系" class="headerlink" title="七层与四层之间的关系"></a>七层与四层之间的关系</h3><p>如图所示：</p><p><img src="/Users/chaos/Library/Application Support/typora-user-images/image-20190812223450184.png" alt="image-20190812223450184"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;HTTP诞生于1991年，是互联网领域一个基石性的协议。全世界电脑上的内容能互联起来，全拜HTTP所赐。因此好好的学习了解一下是必不可少的。&lt;/p&gt;
-&lt;h1 id=&quot;TCP-IP的分层管理&quot;&gt;&lt;a href=&quot;#TCP-IP的分层管理&quot; class=&quot;headerlink&quot;
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;作为软件工程师，必须要掌握诸多计算机领域的相关基础。其中计算机网络就好比武林秘籍中的洗髓经，每日勤加练习，必定能够对上层修为更加纯熟。那么本
       
     
     </summary>
     
-      <category term="网络" scheme="http://wenchaos.com/categories/%E7%BD%91%E7%BB%9C/"/>
     
-    
-      <category term="http" scheme="http://wenchaos.com/tags/http/"/>
+      <category term="计算机网络" scheme="http://wenchaos.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
@@ -468,31 +479,6 @@
     
     
       <category term="kotlin" scheme="http://wenchaos.com/tags/kotlin/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决hexo搭建的博客中标签和分类页面没有内容</title>
-    <link href="http://wenchaos.com/%E5%B7%A5%E5%85%B7%E7%AF%87/hexo%E4%B8%AD%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2%E6%B2%A1%E6%9C%89%E5%86%85%E5%AE%B9/"/>
-    <id>http://wenchaos.com/工具篇/hexo中的标签和分类页面没有内容/</id>
-    <published>2017-12-26T16:00:00.000Z</published>
-    <updated>2019-07-28T14:16:19.880Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在搭建hexo+github个人博客后，常常会遇到各种各样的问题。本文所涉及到的就是作者遇到的其中之一。那在网上查了诸多资料后，也一一尝试一遍，没有什么效果。不过根据那些解决方法，提供了一些思路。</p><h1 id="网上的解决方式"><a href="#网上的解决方式" class="headerlink" title="网上的解决方式"></a>网上的解决方式</h1><h3 id="生成tags和categories页面"><a href="#生成tags和categories页面" class="headerlink" title="生成tags和categories页面"></a>生成tags和categories页面</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo new page &quot;tags&quot; //在source下的tags文件夹下生成index.md</span><br><span class="line">hexo new page &quot;categories&quot;  //在source下的categories文件夹下生成index.md</span><br><span class="line"># 注意：这里的两个页面其实是默认生成的，如果你检查了发现存在，则不必再生成一个</span><br></pre></td></tr></table></figure><h3 id="在对应的index-md中编辑内容"><a href="#在对应的index-md中编辑内容" class="headerlink" title="在对应的index.md中编辑内容"></a>在对应的index.md中编辑内容</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">在/tags/index.md中添加</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line"></span><br><span class="line">在/categories/index.md添加</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">layout: &quot;categories&quot;</span><br></pre></td></tr></table></figure><p>我这些都尝试了后，发现还是不行。然后突然发现一个热心群众提示到，<strong>需要将双引号去掉就行</strong>。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">在/tags/index.md中添加</span><br><span class="line">type: tags</span><br><span class="line">layout: tags</span><br><span class="line"></span><br><span class="line">在/categories/index.md添加</span><br><span class="line">type: categories</span><br><span class="line">layout: categories</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;在搭建hexo+github个人博客后，常常会遇到各种各样的问题。本文所涉及到的就是作者遇到的其中之一。那在网上查了诸多资料后，也一一尝试一
-      
-    
-    </summary>
-    
-      <category term="工具篇" scheme="http://wenchaos.com/categories/%E5%B7%A5%E5%85%B7%E7%AF%87/"/>
-    
-    
-      <category term="hexo" scheme="http://wenchaos.com/tags/hexo/"/>
     
   </entry>
   
